@@ -21,7 +21,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: qwer33/flask
-        tags: v3, latest
+        tags: ${{ github.sha }}
         registry: docker.io
         username: qwer33
         password: dckr_pat_Utwi8XM7-CvS1tI9r8QCTK42IlI
